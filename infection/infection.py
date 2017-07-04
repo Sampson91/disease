@@ -8,7 +8,7 @@ from sklearn.metrics import classification_report
 # from sklearn.neural_network import MLPClassifier
 target = ['0','1']
 names=['sex','addrcode','group_id','casetype','disese_id1','diagnosedate','age','death']
-data = pd.read_table('E:/zheda/project/disease/infection/disease61.txt',header=None,encoding='utf-8',sep='\s+',names=['sex','addrcode','group_id','casetype','disese_id1','diagnosedate','age','death'])
+data = pd.read_table('E:/zheda/project/disease/infection/disease62.txt',header=None,encoding='utf-8',sep='\s+',names=['sex','addrcode','group_id','casetype','disese_id1','diagnosedate','age','death'])
 data.to_csv("E:/zheda/project/disease/infection/disease3.csv")
 X_trian,X_test,y_train,y_test = train_test_split(data[names[0:6]],data[names[7]],test_size=0.3,random_state=42)
 
